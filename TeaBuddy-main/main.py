@@ -2,6 +2,8 @@ import sys
 import os
 import time
 
+from art import teaCup
+
 cls = lambda: os.system('cls' if os.name == 'nt' else 'clear')
 
 def main():
@@ -11,6 +13,7 @@ def main():
     while running:
 
         cls()
+        print(teaCup)
         print(
             "Welcome to TeaBuddy, your friendly tea assistant!\nWhat kind of tea are you in the mood for?\n\n1. Black\n2. Green\n3. White\n4. Oolong\n5. Pu'er\n6. Herbal\n7. Rooibos\n8. Tisane\n9. Other\n10. Exit\n"
             )
@@ -178,6 +181,7 @@ def teaTimer(timeChoice):
     for i in range(timeChoice):
         print(f"Steeping time remaining: {timeChoice - i} minutes")
         time.sleep(1)
+    print(teaCup)
     print("Tea is ready!")
 
     time.sleep(1.5)
