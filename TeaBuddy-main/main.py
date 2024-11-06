@@ -13,7 +13,6 @@ def main():
     while running:
 
         cls()
-        print(teaCup)
         print(
             "Welcome to TeaBuddy, your friendly tea assistant!\nWhat kind of tea are you in the mood for?\n\n1. Black\n2. Green\n3. White\n4. Oolong\n5. Pu'er\n6. Herbal\n7. Rooibos\n8. Tisane\n9. Other\n10. Exit\n"
             )
